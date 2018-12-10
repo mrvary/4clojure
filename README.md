@@ -1,8 +1,8 @@
 # Solutions for 4clojure problems
 
 I liked how [SegFaultAX listed his answers](https://gist.github.com/SegFaultAX/3607101) to the 4clojure
-exercises, so I used it as a template, swapped his solutins for mine and added problem descriptions where I saw fit.
-There are cases where his answers seem more idiosyncratic and concise (which comes down to a better knowledge of the
+exercises, so I used it as a template, swapped his solutions for mine and added problem descriptions where I saw fit.
+There are cases where his answers seem more idiosyncratic and concise (which probably comes down to a better knowledge of the
 standard library and less loop/recur extravaganza), so I kept them as points of comparison.
 
 [Problem 1: Nothing but the Truth [Elementary]](http://www.4clojure.com/problem/1)
