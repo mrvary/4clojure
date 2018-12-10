@@ -10,84 +10,98 @@ standard library and less loop/recur extravaganza), so I kept them as points of 
 ```clojure
 true
 ```
+<br>
 
 [Problem 2: Simple Math [Elementary]](http://www.4clojure.com/problem/2)
 
 ```clojure
 4
 ```
+<br>
 
 [Problem 3: Intro to Strings [Elementary]](http://www.4clojure.com/problem/3)
 
 ```clojure
 "HELLO WORLD"
 ```
+<br>
 
 [Problem 4: Intro to Lists [Elementary]](http://www.4clojure.com/problem/4)
 
 ```clojure
 :a :b :c
 ```
+<br>
 
 [Problem 5: Lists: conj [Elementary]](http://www.4clojure.com/problem/5)
 
 ```clojure
 '(1 2 3 4)
 ```
+<br>
 
 [Problem 6: Intro to Vectors [Elementary]](http://www.4clojure.com/problem/6)
 
 ```clojure
 :a :b :c
 ```
+<br>
 
 [Problem 7: Vectors: conj [Elementary]](http://www.4clojure.com/problem/7)
 
 ```clojure
 [1 2 3 4]
 ```
+<br>
 
 [Problem 8: Intro to Sets [Elementary]](http://www.4clojure.com/problem/8)
 
 ```clojure
 #{:a :b :c :d}
 ```
+<br>
 
 [Problem 9: Sets: conj [Elementary]](http://www.4clojure.com/problem/9)
 
 ```clojure
 2
 ```
+<br>
 
 [Problem 10: Intro to Maps [Elementary]](http://www.4clojure.com/problem/10)
 
 ```clojure
 20
 ```
+<br>
 
 [Problem 11: Maps: conj [Elementary]](http://www.4clojure.com/problem/11)
 
 ```clojure
 [:b 2]
 ```
+<br>
 
 [Problem 12: Intro to Sequences [Elementary]](http://www.4clojure.com/problem/12)
 
 ```clojure
 3
 ```
+<br>
 
 [Problem 13: Sequences: rest [Elementary]](http://www.4clojure.com/problem/13)
 
 ```clojure
 [20 30 40]
 ```
+<br>
 
 [Problem 14: Intro to Functions [Elementary]](http://www.4clojure.com/problem/14)
 
 ```clojure
 8
 ```
+<br>
 
 [Problem 15: Double Down [Elementary]](http://www.4clojure.com/problem/15)
 Write a function which doubles a number.
@@ -95,6 +109,7 @@ Write a function which doubles a number.
 ```clojure
 (fn [x] (* x 2))
 ```
+<br>
 
 [Problem 16: Hello World [Elementary]](http://www.4clojure.com/problem/16)
 Write a function which returns a personalized greeting.
@@ -102,18 +117,21 @@ Write a function which returns a personalized greeting.
 ```clojure
 (fn [name] (str "Hello, " name "!"))
 ```
+<br>
 
 [Problem 17: Sequences: map [Elementary]](http://www.4clojure.com/problem/17)
 
 ```clojure
 '(6 7 8)
 ```
+<br>
 
 [Problem 18: Sequences: filter [Elementary]](http://www.4clojure.com/problem/18)
 
 ```clojure
 '(6 7)
 ```
+<br>
 
 [Problem 19: Last Element [Easy]](http://www.4clojure.com/problem/19)
 
@@ -128,6 +146,7 @@ Write a function which returns the last element in a sequence.
 ;; SegFaultAX:
 #(nth % (dec (count %)))
 ```
+<br>
 
 [Problem 20: Penultimate Element [Easy]](http://www.4clojure.com/problem/20)
 
@@ -142,6 +161,7 @@ Write a function which returns the second to last element from a sequence.
 ;; SegFaultAX: 
 (comp second reverse)
 ```
+<br>
 
 [Problem 21: Nth Element [Easy]](http://www.4clojure.com/problem/21)
 
@@ -156,6 +176,7 @@ Write a function which returns the Nth element from a sequence.
 ;; SegFaultAX:
 (fn [coll n] (first (drop n coll)))
 ```
+<br>
 
 [Problem 22: Count a Sequence [Easy]](http://www.4clojure.com/problem/22)
 
@@ -170,6 +191,7 @@ Write a function which returns the total number of elements in a sequence.
 ;; SegFaultAX:
 #(reduce + (map (constantly 1) %))
 ```
+<br>
 
 [Problem 23: Reverse a Sequence [Easy]](http://www.4clojure.com/problem/23)
 
@@ -186,6 +208,7 @@ Write a function which reverses a sequence.
 ;; SegFaultAX
 #(reduce conj () %)
 ```
+<br>
 
 [Problem 24: Sum It All Up [Easy]](http://www.4clojure.com/problem/24)
 
@@ -194,6 +217,7 @@ Write a function which returns the sum of a sequence of numbers.
 ```clojure
 (fn [coll] (reduce + coll))
 ```
+<br>
 
 [Problem 25: Find the odd numbers [Easy]](http://www.4clojure.com/problem/25)
 
@@ -202,6 +226,7 @@ Write a function which returns only the odd numbers from a sequence.
 ```clojure
 (fn [coll] (filter odd? coll))
 ```
+<br>
 
 [Problem 26: Fibonacci Sequence [Easy]](http://www.4clojure.com/problem/26)
 
@@ -217,6 +242,7 @@ Write a function which returns the first X fibonacci numbers.
 ;; SefFaultAX:
 #(take % (map first (iterate (fn [[a b]] [b (+ a b)]) [1 1])))
 ```
+<br>
 
 [Problem 27: Palindrome Detector [Easy]](http://www.4clojure.com/problem/27)
 
@@ -226,6 +252,7 @@ Write a function which returns true if the given sequence is a palindrome.
 (fn [coll]
   (= (seq coll) (reverse coll)))
 ```
+<br>
 
 [Problem 29: Get the Caps [Easy]](http://www.4clojure.com/problem/29)
 
@@ -238,6 +265,7 @@ Write a function which takes a string and returns a new string containing only t
 ;; SegFaultAX:
 #(apply str (re-seq #"[A-Z]+" %))
 ```
+<br>
 
 [Problem 30: Compress a Sequence [Easy]](http://www.4clojure.com/problem/30)
 
@@ -252,6 +280,7 @@ Write a function which removes consecutive duplicates from a sequence.
 ;; SegFaultAX
 #(map first (partition-by identity %))
 ```
+<br>
 
 [Problem 31: Pack a Sequence [Easy]](http://www.4clojure.com/problem/31)
 
@@ -260,6 +289,7 @@ Write a function which packs consecutive duplicates into sub-lists.
 ```clojure
 (partial partition-by identity)
 ```
+<br>
 
 [Problem 32: Duplicate a Sequence [Easy]](http://www.4clojure.com/problem/32)
 
@@ -277,6 +307,7 @@ Write a function which duplicates each element of a sequence.
 ;; SegFaultAX
 mapcat #(list % %)
 ```
+<br>
 
 [Problem 33: Replicate a Sequence [Easy]](http://www.4clojure.com/problem/33)
 
@@ -294,6 +325,7 @@ Write a function which replicates each element of a sequence a variable number o
 ;; SefFaultAX
 (fn [s n] (mapcat #(repeat n %) s))
 ```
+<br>
 
 [Problem 34: Implement range [Easy]](http://www.4clojure.com/problem/34)
 
@@ -303,12 +335,14 @@ Write a function which creates a list of all integers in a given range.
 (fn [start end]
   (take-while #(< % end) (iterate inc start)))
 ```
+<br>
 
 [Problem 35: Local bindings [Elementary]](http://www.4clojure.com/problem/35)
 
 ```clojure
 7
 ```
+<br>
 
 [Problem 36: Let it Be [Elementary]](http://www.4clojure.com/problem/36)
 
@@ -317,12 +351,14 @@ Write a function which creates a list of all integers in a given range.
  y 3
  z 1]
 ```
+<br>
 
 [Problem 37: Regular Expressions [Elementary]](http://www.4clojure.com/problem/37)
 
 ```clojure
 "ABC"
 ```
+<br>
 
 [Problem 38: Maximum value [Easy]](http://www.4clojure.com/problem/38)
 
@@ -331,6 +367,7 @@ Write a function which takes a variable number of parameters and returns the max
 ```clojure
 (fn [& args] (last (sort args)))
 ```
+<br>
 
 [Problem 41: Drop Every Nth Item [Easy]](http://www.4clojure.com/problem/41)
 
@@ -351,6 +388,7 @@ Write a function which drops every Nth item from a sequence.
 ;; SegFaultAX
 #(apply concat (partition-all (dec %2) %2 %))
 ```
+<br>
 
 [Problem 42: Factorial Fun [Easy]](http://www.4clojure.com/problem/42)
 
@@ -367,48 +405,56 @@ Write a function which calculates factorials.
 ;; SegFaultAX
 #(apply * (range 1 (inc %)))
 ```
+<br>
 
 [Problem 45: Intro to Iterate [Easy]](http://www.4clojure.com/problem/45)
 
 ```clojure
 [1 4 7 10 13]
 ```
+<br>
 
 [Problem 47: Contain Yourself [Easy]](http://www.4clojure.com/problem/47)
 
 ```clojure
 4
 ```
+<br>
 
 [Problem 48: Intro to some [Easy]](http://www.4clojure.com/problem/48)
 
 ```clojure
 6
 ```
+<br>
 
 [Problem 51: Advanced Destructuring [Easy]](http://www.4clojure.com/problem/51)
 
 ```clojure
 [1 2 3 4 5]
 ```
+<br>
 
 [Problem 52: Intro to Destructuring [Easy]](http://www.4clojure.com/problem/52)
 
 ```clojure
 (vector c e)
 ```
+<br>
 
 [Problem 57: Simple Recursion [Elementary]](http://www.4clojure.com/problem/57)
 
 ```clojure
 [5 4 3 2 1]
 ```
+<br>
 
 [Problem 64: Intro to Reduce [Elementary]](http://www.4clojure.com/problem/64)
 
 ```clojure
 +
 ```
+<br>
 
 [Problem 66: Greatest Common Divisor [Easy]](http://www.4clojure.com/problem/66)
 
@@ -424,24 +470,28 @@ Given two integers, write a function which returns the greatest common divisor.
 
 (fn gcd [a b] (if (zero? b) a (recur b (mod a b))))
 ```
+<br>
 
 [Problem 68: Recurring Theme [Elementary]](http://www.4clojure.com/problem/68)
 
 ```clojure
 [7 6 5 4 3]
 ```
+<br>
 
 [Problem 71: Rearranging Code: -> [Elementary]](http://www.4clojure.com/problem/71)
 
 ```clojure
 last
 ```
+<br>
 
 [Problem 72: Rearranging Code: ->> [Elementary]](http://www.4clojure.com/problem/72)
 
 ```clojure
 reduce +
 ```
+<br>
 
 [Problem 76: Intro to Trampoline [Medium]](http://www.4clojure.com/problem/76)
 
@@ -451,6 +501,7 @@ reduce +
 ;; SegFaultAX
 (range 1 12 2)
 ```
+<br>
 
 [Problem 81: Set Intersection [Easy]](http://www.4clojure.com/problem/81)
 
@@ -466,6 +517,7 @@ Write a function which returns the intersection of two sets. The intersection is
 ;; SegFaultAX
 (fn [a b] (set (filter #(contains? b %) a)))
 ```
+<br>
 
 [Problem 83: A Half-Truth [Easy]](http://www.4clojure.com/problem/83)
 
@@ -474,6 +526,7 @@ Write a function which takes a variable number of booleans. Your function should
 ```clojure
 not=
 ```
+<br>
 
 [Problem 88: Symmetric Difference [Easy]](http://www.4clojure.com/problem/88)
 
@@ -486,6 +539,7 @@ Write a function which returns the symmetric difference of two sets. The symmetr
   	(clojure.set/union only-in-a only-in-b)))
 
 ```
+<br>
 
 [Problem 90: Cartesian Product [Easy]](http://www.4clojure.com/problem/90)
 
@@ -500,6 +554,7 @@ Write a function which calculates the Cartesian product of two sets.
 ;; SegFaultAX
 #(set (for [a (vec %1) b (vec %2)] [a b]))
 ```
+<br>
 
 [Problem 100: Least Common Multiple [Easy]](http://www.4clojure.com/problem/100)
 
@@ -510,6 +565,7 @@ Write a function which calculates the least common multiple. Your function shoul
   (let [gcd (fn [a b] (if (zero? b) a (recur b (mod a b))))]
     (/ (reduce * args) (reduce gcd args))))
 ```
+<br>
 
 [Problem 107: Simple closures [Easy]](http://www.4clojure.com/problem/107)
 
@@ -518,6 +574,7 @@ Write a function which calculates the least common multiple. Your function shoul
   (fn [x]
     (reduce * (repeat n x))))
 ```
+<br>
 
 [Problem 120: Sum of square of digits [Easy]](http://www.4clojure.com/problem/120)
 
@@ -543,6 +600,7 @@ Write a function which takes a collection of integers as an argument. Return the
         sum-digits (fn [n] (reduce + (map square (digits n))))]
     (count (filter #(< % (sum-digits %)) coll))))
 ```
+<br>
 
 [Problem 134: A nil key [Elementary]](http://www.4clojure.com/problem/134)
 
@@ -553,12 +611,14 @@ Write a function which, given a key and map, returns true iff the map contains a
   (and (contains? m k) 
        (nil? (get m k))))
 ```
+<br>
 
 [Problem 145: For the win [Elementary]](http://www.4clojure.com/problem/145)
 
 ```clojure
 (range 1 40 4)
 ```
+<br>
 
 [Problem 156: Map Defaults [Elementary]](http://www.4clojure.com/problem/156)
 
@@ -570,21 +630,25 @@ Write a function which takes a default value and a sequence of keys and construc
 ;; SegFaultAX
 #(apply hash-map (interleave %2 (repeat %1)))
 ```
+<br>
 
 [Problem 161: Subset and Superset [Elementary]](http://www.4clojure.com/problem/161)
 
 ```clojure
 #{1 2}
 ```
+<br>
 
 [Problem 162: Logical falsity and truth [Elementary]](http://www.4clojure.com/problem/162)
 
 ```clojure
 1
 ```
+<br>
 
 [Problem 173: Intro to Destructuring 2 [Easy]](http://www.4clojure.com/problem/173)
 
 ```clojure
 f xs
 ```
+<br>
